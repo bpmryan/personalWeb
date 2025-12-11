@@ -1,5 +1,4 @@
 # personalWeb
-This is a side project that I want to do. 
 
 ## Ideas: 
 * Format similar to a resume
