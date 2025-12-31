@@ -6,9 +6,8 @@
     <title>Computer Science</title>
   </head>
   <body>
-    <nav>
-      <!-- TODO: put this is a hamburger button or leave as a sticky nav bar -->
-      <div>
+    <!-- TODO: put this is a hamburger button or leave as a sticky nav bar -->
+    <div>
         <button><a href="index.html">Home</a></button>
         <button><a href="music.html">Music Side</a></button>
         <button>
@@ -19,27 +18,48 @@
             >Download My Resume</a
           >
         </button>
+    </div>
+    <nav>
+        <!-- TODO: leave these for nav through the page -->
         <button><a href="#education">Education</a></button>
         <button><a href="#experience">Experience</a></button>
         <button><a href="#projects">Projects</a></button>
+        <button><a href="#projIdeas">Ideas</a></button>
         <button><a href="#progSkill">Programming Skills</a></button>
         <button><a href="#contact">Contact</a></button>
-
-        <h1>Computer Science Side</h1>
-      </div>
     </nav>
+
+    <header id="top">
+      <h1>Computer Science Side</h1>
+    </header>
 
     <!-- Education section -->
     <div id="education">
-      <h2>Education</h2>
+      <h2>Background Education</h2>
+    </div>
+
+    <div>
       <p>Bachelor Degree:</p>
       <p>Oklahoma City University (OKCU)</p>
       <p>August 2024 - May 2028</p>
+      <p>
+        Currently pursuing a Bachelor Degree in Computer Science and a Minor in
+        Cybersecurity.
+        <br />
+        Treasurer for the OKCU Chapter of the Association of Computing
+        Machinery.
+        <br />
+        Competed in OKCU's first Hackathon in November 2025.
+      </p>
+    </div>
 
-      <p>High School Degree:</p>
+    <!-- <div>
+      <p>High School Dipolma:</p>
       <p>Classen School of Advanced Studies at Northeast</p>
       <p>August 2020 - May 2024</p>
-    </div>
+    </div> -->
+
+    <hr />
 
     <!-- Experience section -->
     <div id="experience">
@@ -47,16 +67,26 @@
     </div>
 
     <div>
-      <h3>OKCU Hackathon</h3>
+      <h3>
+        <a
+          href="https://github.com/JWarren55/Starfe_Hackathon2025"
+          target="_blank"
+          rel="nonopener noreferrer"
+          >OKCU Hackathon</a
+        >
+      </h3>
       <p>November 2025</p>
       <p>1st Place</p>
       <p>
         Designed and developed a web application (StarFe) under a 24-hour
         deadline, enabling students to provide ratings for the university
-        cafeteria menu. Applied version control with Git, resolved technical
-        challenges in real time, and utilized AI-assisted prompting to
-        accelerate development. The project resulted in a complete,
-        production-ready application awarded 1st place out of three teams.
+        cafeteria menu.
+        <br />
+        Applied version control with Git, resolved technical challenges in real
+        time, and utilized AI-assisted prompting to accelerate development.
+        <br />
+        The project resulted in a complete, production-ready application awarded
+        1st place out of three teams.
       </p>
       <p><strong>Software:</strong></p>
       <p>HTML, CSS, JavaScript, Express.js, SQL</p>
@@ -68,13 +98,18 @@
       <p>Treasurer</p>
       <p>
         Coordinated with executive officers to plan and organize bi-weekly
-        technical meetings and events for computer science students. Managed
-        communications with industry speakers and contributed to event planning
-        based on the association’s budget. These efforts resulted in increased
-        meeting frequency and expanded student exposure to diverse career paths
-        in computer science through consistent industry engagement.
+        technical meetings and events for computer science students.
+        <br />
+        Managed communications with industry speakers and contributed to event
+        planning based on the association’s budget.
+        <br />
+        These efforts resulted in increased meeting frequency and expanded
+        student exposure to diverse career paths in computer science through
+        consistent industry engagement.
       </p>
     </div>
+
+    <hr />
 
     <!-- Projects section -->
     <div id="projects">
@@ -82,7 +117,14 @@
     </div>
 
     <div>
-      <p>Jeopardy Web Application</p>
+      <p>
+        <a
+          href="https://github.com/bpmryan/jeopardywa"
+          target="_blank"
+          rel="nonopener noreferrer"
+          >Jeopardy Web Application</a
+        >
+      </p>
       <p>Software:</p>
       <ul>
         <li><strong>Frontend: </strong>HTML, CSS, JavaScript</li>
@@ -94,12 +136,68 @@
       <p>
         Developed a backend-focused CRUD web application supporting persistent
         storage of custom game states and categories in a SQL database.
+        <br />
         Implemented a Spring Boot MVC architecture to separate business logic
-        from the user interface and improve code organization. Applied secure
-        data-handling practices to manage game configurations and user-generated
-        content.
+        from the user interface and improve code organization.
+        <br />
+        Applied secure data-handling practices to manage game configurations and
+        user-generated content.
       </p>
     </div>
+
+    <div>
+      <p>
+        <a
+          href="https://github.com/bpmryan/personalWeb"
+          target="_blank"
+          rel="nonopener noreferrer"
+        >
+          Personal Website
+        </a>
+      </p>
+      <p>Software:</p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <p>
+        Designed and deployed a responsive personal website to showcase projects
+        and resume content.
+      </p>
+    </div>
+
+    <div>
+      <p>
+        <a
+          href="https://github.com/bpmryan/pyPdfMerge"
+          target="_blank"
+          rel="nonopener noreferrer"
+        >
+          Python PDF Merger
+        </a>
+      </p>
+      <p>Software:</p>
+      <ul>
+        <li>Python</li>
+      </ul>
+      <p>
+        Programmed a local automation utility to merge multiple PDF documents,
+        <br />
+        eliminating the need for insecure thrid-party websites.
+      </p>
+    </div>
+
+    <hr />
+
+    <div id="projIdeas">
+        <h2>Project Ideas</h2>
+        <p>This is a space for any future project ideas or updates to current projects.</p>
+    </div>
+
+
+
+    <hr />
 
     <!-- Programming Skills section  -->
     <div id="progSkill">
@@ -130,11 +228,16 @@
       </ul>
     </div>
 
+    <hr />
+
     <!-- contact section -->
     <div id="contact">
       <h2>Contact Me</h2>
-      <p>I'd would love to connect with you!</p>
-      <p>I promise I won't bite.</p>
+      <p>
+        I'd would love to connect with you!
+        <br />
+        I promise I don't bite.
+      </p>
     </div>
 
     <div>
@@ -152,10 +255,15 @@
     </div>
     <div>
       <p>Let's Connect!</p>
-      <a href="https://www.linkedin.com/in/bryan-dinh-223956359/"
-        >LinkedIn Profile</a
-      >
+      <a
+        href="https://www.linkedin.com/in/bryan-dinh-223956359/"
+        target="_blank"
+        rel="nonopener noreferrer"
+        >LinkedIn Profile
+      </a>
     </div>
+
+    <hr />
 
     <footer>
       <p>©2025 Bryan Dinh</p>
