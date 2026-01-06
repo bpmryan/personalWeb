@@ -3,53 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/landingPage.css" />
     <title>Landing Page</title>
   </head>
   <body>
-    <header id="top">
-      <!-- TODO: Put these in hamburger button or hyperlink to another section in website -->
-      <button><a href="cs.html">Computer Science Side</a></button>
+    <header class="hero" id="top">
+      <nav class="hero-nav">
+        <a href="cs.html">Computer Science Side</a>
+        <a href="music.html">Music Side</a>
+        <a href="#contact">Contact Me</a>
+        <a
+          href="files/Bryan_Dinh_Resume2025.pdf"
+          target="_blank"
+          rel="nonopener noreferrer"
+        >
+          Resume
+        </a>
+      </nav>
 
-      <button><a href="music.html">Music Side</a></button>
-
-      <!-- TODO: Add title to javascript as a prompt too (warning) -->
-      <button title="If you're an employer, DO NOT click this" id="filterBtn">
-        <a href="">Click if you dare</a>
-      </button>
-
-      <button id="contactMeBtn"><a href="#contact">Contact Me</a></button>
-
-      <!-- TODO: Create a function that allows the user to preview/download my resume -->
-      <button id="downloadResume">
-            <a
-            href="files/Bryan_Dinh_Resume2025.pdf"
-            target="_blank"
-            rel="nonopener noreferrer">
-            Resume
-          </a>
-      </button>
-      <!-- Center name -->
-      <h1>Bryan Dinh</h1>
+      <div class="hero-content">
+        <!-- Center name -->
+        <h1>Bryan Dinh</h1>
+        <p class="hero-tagline">Computer Science Student · Musician</p>
+      </div>
     </header>
 
+    <button id="filterBtn" aria-hidden="true" hidden>Click if you dare</button>
+
     <!-- TODO: find a picture of yourself -->
-    <div id="aboutMe">
+    <section id="aboutMe">
       <h2>About Me</h2>
       <p>
-        I am currently pursuing a Bachelor's degree in Computer Science at
-        Oklahoma City University, and plan on graduating in May 2028. My primary
-        interests are in anything computer science related, such as learning new
-        programming languages and building software, and music. I am still
-        learning many new things about computer science, so my interests in this
-        field will continue to change in some way, whether or not I lose or gain
-        interest in certain concepts or topics.
+        I’m a Computer Science student at Oklahoma City University (Class of
+        2028) with a strong interest in software development, web technologies,
+        and problem-solving through code.
       </p>
-    </div>
+      <p>
+        Outside of tech, I involve myself with music, whether that may be as a
+        gigging musician or studying other musicians compositions to create my
+        own.
+      </p>
+      <p>
+        I hope that in the future I will be able to merge those two worlds into
+        one big project that I can be proud of.
+      </p>
+    </section>
 
-    <hr>
+    <hr />
 
-    <div id="hobbies">
+    <section id="hobbies">
       <h2>Hobbies</h2>
       <ul>
         <li>Writing, studying, and performing music</li>
@@ -72,47 +74,45 @@
           >
         </li>
       </ul>
-    </div>
+    </section>
 
-    <hr>
+    <hr />
 
     <!-- TODO: Link GitHub with the username -->
-    <div id="contact">
-      <h2>Contact Me</h2>
-      <p>I'd would love to connect with you!</p>
-      <p>I promise I won't bite.</p>
-    </div>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <section id="contact">
+          <h2>Contact Me</h2>
+          <p>I'd love to connect with you!</p>
+          <p>I promise I won't bite.</p>
+        </section>
 
-    <!-- blocks with contact info -->
-    <!-- Have icons for each part -->
-    <div>
-      <p>Email me at</p>
-      <p>bryandinh0224@gmail.com</p>
-    </div>
-    <div>
-      <p>GitHub</p>
-      <a
-        href="https://github.com/bpmryan"
-        target="_blank"
-        rel="nonopener noreferrer"
-        >bpmryan</a
-      >
-    </div>
-    <div>
-      <p>Let's Connect!</p>
-      <a href="https://www.linkedin.com/in/bryan-dinh-223956359/"
-        >LinkedIn Profile</a
-      >
-    </div>
-
-    <hr>
-
-    <footer>
-      <p>©2025 Bryan Dinh</p>
+        <div class="footer-contact">
+          <a href="mailto:bryandinh0224@gmail.com"> bryandinh0224@gmail.com </a>
+          <a
+            href="https://github.com/bpmryan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/bryan-dinh-223956359/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
+        </div>
+        <div>
+          <a href="#top">Return to the top</a>
+        </div>
+        <footer>
+          <p>©2025 Bryan Dinh</p>
+        </footer>
+      </div>
     </footer>
-    <div>
-      <a href="#top">Return to the top</a>
-    </div>
+
     <script></script>
   </body>
 </html>
