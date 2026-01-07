@@ -13,3 +13,7 @@ setTimeout(() => {
   btn.hidden = false;
   btn.setAttribute("aria-hidden", "false");
 }, 8000);
+
+// Live copyright date
+// overrides 2025 into current year
+document.querySelector('.footer-bottom p').innerHTML = `© ${new Date().getFullYear()} Bryan Dinh`;
