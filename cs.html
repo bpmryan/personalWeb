@@ -1,42 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/cs.css" />
     <title>Computer Science</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- TODO: put this is a hamburger button or leave as a sticky nav bar -->
+    <div>
+      <button><a href="index.html">Home</a></button>
+      <button><a href="music.html">Music Side</a></button>
+      <button>
+        <a
+          href="files/Bryan_Dinh_Resume2025.pdf"
+          target="_blank"
+          rel="nonopener noreferrer"
+          >Download My Resume</a
+        >
+      </button>
+    </div>
     <nav>
-        <h1>Computer Science Side</h1>
-        <div>
-            <a href="index.html">Home</a>
-            <a href="music.html">Music Side</a>
-            <a href="files/Bryan_Dinh_Resume2025.pdf">Download My Resume</a>
-            <a href="#contact">Contact</a>
-        </div>
+      <!-- TODO: leave these for nav through the page -->
+      <button><a href="#education">Education</a></button>
+      <button><a href="#experience">Experience</a></button>
+      <button><a href="#projects">Projects</a></button>
+      <button><a href="#projIdeas">Ideas</a></button>
+      <button><a href="#progSkill">Programming Skills</a></button>
+      <button><a href="#contact">Contact</a></button>
     </nav>
-    
-    
+
+    <header id="top">
+      <h1>Bryan Dinh - Computer Science</h1>
+    </header>
+
+    <!-- Education section -->
+    <div id="education">
+      <h2>Background Education</h2>
+    </div>
+
+    <div>
+      <p>Bachelor Degree:</p>
+      <p>Oklahoma City University (OKCU)</p>
+      <p>August 2024 - May 2028</p>
+      <p>
+        Currently pursuing a Bachelor Degree in Computer Science and a Minor in
+        Cybersecurity.
+        <br />
+        Treasurer for the OKCU Chapter of the Association of Computing
+        Machinery.
+        <br />
+        Competed in OKCU's first Hackathon in November 2025.
+      </p>
+    </div>
+
+    <!-- <div>
+      <p>High School Dipolma:</p>
+      <p>Classen School of Advanced Studies at Northeast</p>
+      <p>August 2020 - May 2024</p>
+    </div> -->
+
+    <hr />
+
+    <!-- Experience section -->
+    <div id="experience">
+      <h2>Experience</h2>
+    </div>
+
+    <div>
+      <h3>
+        <a
+          href="https://github.com/JWarren55/Starfe_Hackathon2025"
+          target="_blank"
+          rel="nonopener noreferrer"
+          >OKCU Hackathon</a
+        >
+      </h3>
+      <p>November 2025</p>
+      <p>1st Place</p>
+      <p>
+        Designed and developed a web application (StarFe) under a 24-hour
+        deadline, enabling students to provide ratings for the university
+        cafeteria menu.
+        <br />
+        Applied version control with Git, resolved technical challenges in real
+        time, and utilized AI-assisted prompting to accelerate development.
+        <br />
+        The project resulted in a complete, production-ready application awarded
+        1st place out of three teams.
+      </p>
+      <p><strong>Software:</strong></p>
+      <p>HTML, CSS, JavaScript, Express.js, SQL</p>
+    </div>
+
+    <div>
+      <h3>OKCU Association of Computing Machinery (ACM)</h3>
+      <p>September 2025 - Present</p>
+      <p>Treasurer</p>
+      <p>
+        Coordinated with executive officers to plan and organize bi-weekly
+        technical meetings and events for computer science students.
+        <br />
+        Managed communications with industry speakers and contributed to event
+        planning based on the association’s budget.
+        <br />
+        These efforts resulted in increased meeting frequency and expanded
+        student exposure to diverse career paths in computer science through
+        consistent industry engagement.
+      </p>
+    </div>
+
+    <hr />
+
+    <!-- Projects section -->
+    <div id="projects">
+      <h2>Projects</h2>
+    </div>
+
+    <div>
+      <p>
+        <a
+          href="https://github.com/bpmryan/jeopardywa"
+          target="_blank"
+          rel="nonopener noreferrer"
+          >Jeopardy Web Application</a
+        >
+      </p>
+      <p>Software:</p>
+      <ul>
+        <li><strong>Frontend: </strong>HTML, CSS, JavaScript</li>
+        <li><strong>Backend: </strong>Java</li>
+        <li><strong>Database: </strong>SQL</li>
+        <li><strong>Framework: </strong>Spring Boot</li>
+      </ul>
+
+      <p>
+        Developed a backend-focused CRUD web application supporting persistent
+        storage of custom game states and categories in a SQL database.
+        <br />
+        Implemented a Spring Boot MVC architecture to separate business logic
+        from the user interface and improve code organization.
+        <br />
+        Applied secure data-handling practices to manage game configurations and
+        user-generated content.
+      </p>
+    </div>
+
+    <div>
+      <p>
+        <a
+          href="https://github.com/bpmryan/personalWeb"
+          target="_blank"
+          rel="nonopener noreferrer"
+        >
+          Personal Website
+        </a>
+      </p>
+      <p>Software:</p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <p>
+        Designed and deployed a responsive personal website to showcase projects
+        and resume content.
+      </p>
+    </div>
+
+    <div>
+      <p>
+        <a
+          href="https://github.com/bpmryan/pyPdfMerge"
+          target="_blank"
+          rel="nonopener noreferrer"
+        >
+          Python PDF Merger
+        </a>
+      </p>
+      <p>Software:</p>
+      <ul>
+        <li>Python</li>
+      </ul>
+      <p>
+        Programmed a local automation utility to merge multiple PDF documents,
+        <br />
+        eliminating the need for insecure thrid-party websites.
+      </p>
+    </div>
+
+    <hr />
+
+    <!-- Current working on section -->
+    <section id="current">
+      <h2>Currently</h2>
+      <ul>
+        <li>
+          Building web applications with Java, Spring Boot, and JavaScript
+        </li>
+        <li>Expanding backend and database design skills</li>
+        <li>Participating in hackathons and ACM events</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <!-- Future Projects section -->
+    <div id="projIdeas">
+      <h2>Project Ideas</h2>
+      <p>
+        This is a space for any future project ideas or updates to current
+        projects.
+        <br />
+        There are many ideas, but these are the ones that are semi-fleshed out.
+      </p>
+    </div>
+
+    <div>
+      <ul>
+        <li>Add certain things to this website:</li>
+        <ul>
+          <li>Image to ASCII art converter</li>
+          <li>PDF merger</li>
+          <li>Password guessing game</li>
+        </ul>
+        <li>User authentication</li>
+        <ul>
+          <li>Frontend: HTML, CSS, JavaScript</li>
+          <li>Backend: Java</li>
+          <li>Database: SQL</li>
+          <li>Framework: Spring Boot</li>
+          <li>Practice using Spring Boot</li>
+        </ul>
+        <li>Create Python game</li>
+        <ul>
+          <li>Flappy Bird</li>
+          <li>Pac Man</li>
+          <li>Snake Apple game</li>
+        </ul>
+        <li>Improve Jeopardy Web App</li>
+        <ul>
+          <li>Improve UI</li>
+          <li>Allow users to change their passwords</li>
+          <li>Create 2 windows for Host and Player</li>
+          <li>Have a way to record points and player/team's performance</li>
+          <li>Link physical buzzer system</li>
+        </ul>
+        <li>Make PDF Merger accessible in my PC's terminal and/or website</li>
+        <!-- <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li> -->
+      </ul>
+    </div>
+
+    <hr />
+
+    <!-- Programming Skills section  -->
+    <div id="progSkill">
+      <h2>Coding Languages</h2>
+      <ul>
+        <li>Java</li>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>SQL</li>
+        <li>Python</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Frameworks & Libraries</h2>
+      <ul>
+        <li>Spring Boot</li>
+        <li>Express.js</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Tools & Techologies</h2>
+      <ul>
+        <li>Git and GitHub</li>
+        <li>VS Code</li>
+      </ul>
+    </div>
+
+    <hr />
 
     <!-- contact section -->
     <div id="contact">
-        <h2>Contact Me</h2>
-        <p>I'd would love to connect with you!</p>
-        <p>I promise I won't bite.</p>
+      <h2>Contact Me</h2>
+      <p>
+        I'd would love to connect with you!
+        <br />
+        I promise I don't bite.
+      </p>
     </div>
 
     <div>
-        <p>Email me at</p>
-        <p>bryandinh0224@gmail.com</p>
+      <p>Email me at</p>
+      <p>bryandinh0224@gmail.com</p>
     </div>
     <div>
-        <p>GitHub</p>
-        <a href="https://github.com/bpmryan" target="_blank" rel="nonopener noreferrer">bpmryan</a>
+      <p>GitHub</p>
+      <a
+        href="https://github.com/bpmryan"
+        target="_blank"
+        rel="nonopener noreferrer"
+        >bpmryan</a
+      >
     </div>
     <div>
-        <p>Let's Connect!</p>
-        <a href="https://www.linkedin.com/in/bryan-dinh-223956359/">LinkedIn Profile</a>
+      <p>Let's Connect!</p>
+      <a
+        href="https://www.linkedin.com/in/bryan-dinh-223956359/"
+        target="_blank"
+        rel="nonopener noreferrer"
+        >LinkedIn Profile
+      </a>
     </div>
+
+    <hr />
 
     <footer>
       <p>©2025 Bryan Dinh</p>
@@ -44,5 +329,5 @@
     <div>
       <a href="#top">Return to the top</a>
     </div>
-</body>
+  </body>
 </html>
