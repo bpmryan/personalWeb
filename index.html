@@ -8,17 +8,19 @@
   </head>
   <body>
     <header class="hero" id="top">
-      <nav class="hero-nav">
-        <a href="cs.html">Computer Science Side</a>
-        <a href="music.html">Music Side</a>
-        <a href="#contact">Contact Me</a>
-        <a
-          href="files/Bryan_Dinh_Resume2025.pdf"
-          target="_blank"
-          rel="nonopener noreferrer"
-        >
-          Resume
-        </a>
+      <nav class="site-nav">
+        <div class="nav-links">
+          <a href="cs.html">Computer Science</a>
+          <a href="music.html">Music</a>
+          <a href="#contact">Contact</a>
+          <a
+            href="files/Bryan_Dinh_Resume2025.pdf"
+            target="_blank"
+            class="resume-link"
+          >
+            Resume
+          </a>
+        </div>
       </nav>
 
       <div class="hero-content">
@@ -30,6 +32,7 @@
 
     <button id="filterBtn" aria-hidden="true" hidden>Click if you dare</button>
 
+    <hr />
     <!-- TODO: find a picture of yourself -->
     <section id="aboutMe">
       <h2>About Me</h2>
@@ -57,11 +60,12 @@
         <li>Writing, studying, and performing music</li>
         <li>Watching anime</li>
         <li>
+          Youth leader at
           <a
             href="https://www.facebook.com/dmvnntokc"
             target="_blank"
             rel="nonopener noreferrer"
-            >Thiếu Nhi Thánh Thể</a
+            >ĐMVNNT Thiếu Nhi Thánh Thể</a
           >
         </li>
         <li>
@@ -78,16 +82,18 @@
 
     <hr />
 
-    <!-- TODO: Link GitHub with the username -->
+    <!-- TODO: create icons for each contact link -->
     <footer class="site-footer">
       <div class="footer-inner">
-        <section id="contact">
-          <h2>Contact Me</h2>
-          <p>I'd love to connect with you!</p>
-          <p>I promise I won't bite.</p>
-        </section>
+        <div id="footer-about">
+          <h2 id="contact">Contact</h2>
+          <p class="footer-lead">Let's connect!</p>
+          <p class="footer-sub">
+            Open to internships, collaborations, and opportunties.
+          </p>
+        </div>
 
-        <div class="footer-contact">
+        <div class="footer-links">
           <a href="mailto:bryandinh0224@gmail.com"> bryandinh0224@gmail.com </a>
           <a
             href="https://github.com/bpmryan"
@@ -104,15 +110,14 @@
             LinkedIn
           </a>
         </div>
-        <div>
+
+        <div class="footer-bottom">
           <a href="#top">Return to the top</a>
+          <p>© 2025 Bryan Dinh</p>
         </div>
-        <footer>
-          <p>©2025 Bryan Dinh</p>
-        </footer>
       </div>
     </footer>
 
-    <script></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
