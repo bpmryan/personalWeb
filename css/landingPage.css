@@ -370,6 +370,18 @@ a:hover {
   text-align: right;
 }
 
+/* The initial hidden state */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+/* The state triggered by JavaScript */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 /* for mobile version */
