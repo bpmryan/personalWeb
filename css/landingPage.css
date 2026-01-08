@@ -5,9 +5,14 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
-  overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
+  /* overflow-x: hidden; Prevents unwanted horizontal scrolling */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Name of site section/hero */
@@ -37,18 +42,25 @@ html, body {
 
 /* nav bar section */
 .site-nav {
+  position: sticky; /* Support for Safari */
+  top: 0;
+  z-index: 1000; /* Ensures the nav stays on top of all other elements */
+  overflow: hidden;
+  padding: 1rem;
+
+  /* Glassmorphism effect */
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
   width: 100%;
-  background: white;
-  border-bottom: 1px solid #eee;
 }
 
 .nav-inner {
   max-width: 1100px;
   margin: 0 auto;
   padding: 1rem 1.5rem;
-
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -303,16 +315,16 @@ a:hover {
   transition: color 0.2s ease;
 }
 
-.footer-bottom p, 
+.footer-bottom p,
 .footer-bottom .backToTop {
-    display: inline-flex;
-    margin: 0;
-    color: #64748b;
-    white-space: rowrap;
+  display: inline-flex;
+  margin: 0;
+  color: #64748b;
+  white-space: rowrap;
 }
 
 .footer-bottom .backToTop:hover {
-    color: #38bdf8;
+  color: #38bdf8;
 }
 
 .footer-bottom a:hover {
@@ -382,7 +394,6 @@ a:hover {
   opacity: 1;
   transform: translateY(0);
 }
-
 
 /* for mobile version */
 @media (max-width: 768px) {
