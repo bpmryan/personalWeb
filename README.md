@@ -3,14 +3,14 @@
 ## Ideas: 
 * Format similar to ATS resume
   * CS
-    * Project links
-    * Coding languages 
-    * Frameworks and libraries currently learning or learnt
+    * Project links (done)
+    * Coding languages (done)
+    * Frameworks and libraries currently learning or learnt (done)
     * Photos from Hackathon 
-    * Have a list of potential project ideas that you'd like to work on
+    * Have a list of potential project ideas that you'd like to work on (done)
 
   * Musician
-    * Link to @bpm_ryan insta
+    * Link to @bpm_ryan insta (done)
     * List of gigs 
     * Mua lan
     * Church gigs
@@ -24,7 +24,22 @@
 * Mess around with animations with the cursor and loading
   * have some animations going on in the background of the window 
 
-* Find a theme for the background of the website
+
+
+* Style 
+  * [fonts](https://www.figma.com/resource-library/best-fonts-for-websites/): 
+    * sans-serif
+    * Josefin sans
+    * roboto
+    * ubuntu
+    * ranade
+  * cursor animation
+  * loading screen
+  * **Background theme:**
+    * Morse code of name initials 
+      * transitions from morse to text 
+    * Music notes that also use morse for music page
+
 
 * Very random ideas: 
   * Place to write ascii art 
