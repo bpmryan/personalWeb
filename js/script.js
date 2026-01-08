@@ -29,7 +29,8 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    threshold: 0.15 // trigger when 15% of the element is visible 
+    threshold: 0.05, // trigger when 5% of the element is visible 
+    rootMargin: "0px 0px -50px 0px" // Starts the animation 50px before it even hits the screen
 });
 
 // Grab all elements with the 'reveal' class and start observing them
