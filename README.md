@@ -24,8 +24,6 @@
 * Mess around with animations with the cursor and loading
   * have some animations going on in the background of the window 
 
-
-
 * Style 
   * [fonts](https://www.figma.com/resource-library/best-fonts-for-websites/): 
     * sans-serif
