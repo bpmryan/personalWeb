@@ -37,6 +37,7 @@
     * Morse code of name initials 
       * transitions from morse to text 
     * Music notes that also use morse for music page
+    * [Manga Background Scenery](https://www.behance.net/gallery/239584089/MANGA-BACKGROUND-ILLUSTRATION?tracking_source=search_projects|manga+panel&l=0&bid=119357)
 
 
 * Very random ideas: 

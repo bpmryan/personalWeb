@@ -22,12 +22,16 @@ html {
   flex-direction: column;
   justify-content: space-between;
   padding: 2rem;
+  background-image: url(../media/heroBkg.png);
 }
 
 .hero-content {
+  font-family: 'Bubble Sans', sans-serif;
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
+  background-color: #f8fafc;
+  opacity: 75%;
 }
 
 .hero h1 {
@@ -52,6 +56,8 @@ html {
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  font-family: 'Bubble Sans', sans-serif;
 
   width: 100%;
 }
@@ -127,6 +133,7 @@ a:hover {
 
 /* footer section */
 .site-footer {
+  font-family: 'Bubble Sans', sans-serif;
   background: radial-gradient(circle at top right, #1e293b, #0f172a);
   color: #f8fafc;
   padding: 5rem 1.5rem 2rem;
