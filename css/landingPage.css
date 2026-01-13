@@ -17,19 +17,25 @@ html {
 
 /* Name of site section/hero */
 .hero {
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   justify-content: space-between;
   padding: 2rem;
   background-image: url(../media/heroBkg.png);
+  background-size: cover;
+  background-position: center center;
 }
 
 .hero-content {
   font-family: 'Bubble Sans', sans-serif;
+
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
+  width: 500px;
+  align-self: center;
+
   background-color: #f8fafc;
   opacity: 75%;
 }
@@ -50,12 +56,12 @@ html {
   top: 0;
   z-index: 1000; /* Ensures the nav stays on top of all other elements */
   overflow: hidden;
-  padding: 1rem;
+  padding: 1rem; 
 
   /* Glassmorphism effect */
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(202, 202, 202, 0.8);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(128, 128, 128, 0);
 
   font-family: 'Bubble Sans', sans-serif;
 
@@ -129,6 +135,10 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.aboutMe-panel {
+  
 }
 
 /* footer section */
