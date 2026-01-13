@@ -32,11 +32,7 @@
 
 * Style 
   * [fonts](https://www.figma.com/resource-library/best-fonts-for-websites/): 
-    * sans-serif
-    * Josefin sans
-    * roboto
-    * ubuntu
-    * ranade
+    * bubble sans, sans-serif
   * cursor animation
   * loading screen
   * **Background theme:**
@@ -44,7 +40,7 @@
       * transitions from morse to text 
     * Music notes that also use morse for music page
     * [Manga Background Scenery](https://www.behance.net/gallery/239584089/MANGA-BACKGROUND-ILLUSTRATION?tracking_source=search_projects|manga+panel&l=0&bid=119357)
-    * Hero image in index.html [TG Suzuki](https://www.behance.net/tgsuzuki)
+      * Hero image in index.html [TG Suzuki](https://www.behance.net/tgsuzuki)   
 
 
 
