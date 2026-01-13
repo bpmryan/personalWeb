@@ -17,6 +17,12 @@
     * Freelance musician gigs 
     * Link to compositions
     * Photos of recitals
+  
+* **Click if you dare (ideas)**:
+  * Loop that alerts the user if they're sure they want to look at it 
+  * Guessing number game
+    * if wrong, send alerts again
+    * if correct rickroll
 
 * Place for the user to contact me
   *  link GitHub, LinkedIn, and email
@@ -38,6 +44,8 @@
       * transitions from morse to text 
     * Music notes that also use morse for music page
     * [Manga Background Scenery](https://www.behance.net/gallery/239584089/MANGA-BACKGROUND-ILLUSTRATION?tracking_source=search_projects|manga+panel&l=0&bid=119357)
+    * Hero image in index.html [TG Suzuki](https://www.behance.net/tgsuzuki)
+
 
 
 * Very random ideas: 
