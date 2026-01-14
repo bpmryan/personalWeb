@@ -41,7 +41,7 @@
     * Music notes that also use morse for music page
     * [Manga Background Scenery](https://www.behance.net/gallery/239584089/MANGA-BACKGROUND-ILLUSTRATION?tracking_source=search_projects|manga+panel&l=0&bid=119357)
       * Hero image in index.html [TG Suzuki](https://www.behance.net/tgsuzuki)   
-
+    * [SVG](https://glyphs.fyi/dir?c=device&i=robot)
 
 
 * Very random ideas: 
