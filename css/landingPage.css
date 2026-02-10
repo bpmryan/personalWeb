@@ -16,6 +16,10 @@ html {
   scroll-behavior: smooth;
 }
 
+hr {
+  border: 2px solid black;
+}
+
 /* Name of site section/hero */
 .hero {
   min-height: 100vh;
@@ -145,6 +149,7 @@ section {
   width: 100% !important;
   height: 100%;
   border: 4px solid black;
+  margin-bottom: 5%;
 
   display: flex;
   flex-direction: column;
@@ -253,6 +258,7 @@ section {
   gap: 20px;
 
   margin: auto;
+  margin-bottom: 5%;
   padding: 5%;
 }
 
@@ -264,25 +270,11 @@ section {
   padding: 10%;
 }
 
-.codingPanel {
-  height: 50%;
+.hSection1, 
+.hSection2 {
+  display: flex;
 }
-
-.musicPanel {
-  width: 60%;
-  height: 50%;
-}
-
-.animePanel {
-}
-
-.tnttPanel {
-}
-
-.muaLanPanel {
-  width: 36.5%;
-  height: 50%;
-}
+   
 
 /* footer section */
 .site-footer {
