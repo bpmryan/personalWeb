@@ -159,6 +159,7 @@ section {
   object-fit: cover;
   display: block;
   border-top: 4px solid black;
+  flex-grow: 1;
 }
 
 .panels p {
