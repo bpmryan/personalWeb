@@ -53,3 +53,21 @@
   * Snake apple eater game
   * Random filter that changes the background of site into something randome 
     * Ideas: anime, binary, explosions, pixil, falling music notes 
+
+
+## Suggestion for hobby-text
+`
+.hobby-text {
+  position: absolute;
+  background: white;
+  border: 3px solid black;
+  padding: 8px 12px; /* Smaller padding */
+  font-weight: 800;
+  text-transform: uppercase;
+  z-index: 10;
+  width: fit-content; /* Only as wide as the text */
+  max-width: 180px;   /* Prevents it from getting too big */
+  font-size: 0.8rem;  /* Slightly smaller font */
+  box-shadow: 4px 4px 0px black; /* Hard shadow for manga look */
+}
+`

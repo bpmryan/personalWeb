@@ -174,16 +174,19 @@ section {
 
   background-image: radial-gradient(#000 10%, transparent 11%);
   background-size: 10px 10px;
-  background-position: 0 0, 5px 5px;
+  background-position:
+    0 0,
+    5px 5px;
   background-attachment: local;
 
-  background-color: rgba(255, 255, 255, 0.9); 
+  background-color: rgba(255, 255, 255, 0.9);
   background-blend-mode: lighten;
 
   font-weight: 800;
   text-transform: uppercase;
 }
 
+/* About me section */
 .aboutMe-title {
   width: 30%;
   height: auto;
@@ -262,19 +265,201 @@ section {
   padding: 5%;
 }
 
-#hobbies-Panel {
+.hobbies-grid {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 10%;
+  height: 400px;
+  border: 4px solid black;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  background-color: white; /* Changed from black to prevent dark gaps */
 }
 
-.hSection1, 
-.hSection2 {
-  display: flex;
+.hobby-card {
+  position: relative;
+  height: 100%;
+  width: 50%; /* Resetting to 50% for equal distribution */
+  flex: 1;
 }
-   
+
+/* Background Image styling */
+.hobby-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+
+.hobby-card:hover .hobby-image {
+  transform: scale(1.05);
+}
+
+.hobby-text {
+  position: absolute;
+  background: white;
+  border: 3px solid black;
+  padding: 10px 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  z-index: 10;
+  max-width: 250px;
+  font-size: 0.9rem;
+}
+
+.split-diagonal .hobby-card, 
+.split-diagonal-reverse .hobby-card {
+  flex: 1;
+  /* This filter creates a 4px black line along the clip-path edge */
+  filter: drop-shadow(4px 0px 0px black) drop-shadow(-4px 0px 0px black);
+}
+
+/* Section 1: Diagonal Logic */
+.split-diagonal .coding {
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+  z-index: 2;
+  margin-right: -10%;
+}
+
+.split-diagonal .music {
+  clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+  margin-left: -1px;
+}
+
+/* Text Positioning for Row 1 */
+.coding .hobby-text {
+  top: 20px;
+  left: 20px;
+}
+.music .hobby-text {
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Section 2: Full Width Anime */
+.full-width .hobby-text {
+  top: 20px;
+  right: 40px;
+  width: 100%;
+}
+
+/* Section 3: Reverse Diagonal Logic */
+/* 1. Ensure the container has no white background peeking through */
+.hobbies-grid.split-diagonal-reverse {
+  background-color: black; 
+}
+
+/* 2. The TNTT Panel (Left side) */
+.split-diagonal-reverse .tntt {
+  width: 60%; /* Make it slightly wider to ensure overlap */
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  z-index: 1;
+}
+
+/* 3. The Mua Lan Panel (Right side) */
+.split-diagonal-reverse .mua-lan {
+  width: 50%;
+  /* This starts exactly where the TNTT panel's right edge ends */
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+  z-index: 1;
+}
+
+/* 4. Ensure Mua Lan image fills the container */
+.mua-lan .hobby-image {
+  background-size: cover;
+  background-position: center;
+}
+
+/* Text Positioning for Row 3 */
+.tntt .hobby-text {
+  top: 20px;
+  left: 20px;
+}
+.muan-lan .hobby-text {
+  bottom: 20px;
+  right: 20px;
+}
+/* 
+/* Row 1: Left Panel */
+.split-diagonal .coding, 
+.split-diagonal-reverse .tntt {
+  margin-right: -20%;
+  z-index: 1;
+} 
+
+/* Row 1 & 3: Diagonal Cuts */
+.split-diagonal .coding {
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+}
+.split-diagonal .music {
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+/* Row 3: Reverse Cuts */
+/* .split-diagonal-reverse .tntt {
+  clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
+  margin-bottom: -10%;
+}
+.split-diagonal-reverse .muan-lan {
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+  margin-bottom: -10%;
+} */
+
+/* Add a 4px black divider line between images */
+.hobby-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* This creates a border that follows the clipped shape */
+  box-shadow: inset 0 0 0 4px black;
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hobbies-grid {
+    flex-direction: column;
+    height: auto;
+  }
+  .hobby-card {
+    height: 300px;
+    clip-path: none !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* The Halftone Overlay */
+.hobby-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* Creates the dot pattern */
+  background-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.2) 1px,
+    transparent 1px
+  );
+  background-size: 4px 4px; /* Adjust this for bigger/smaller dots */
+
+  /* Blends the dots into the image */
+  mix-blend-mode: multiply;
+  pointer-events: none; /* Allows you to still click things underneath */
+  opacity: 0.6;
+}
+
+/* Optional: Make the dots pop more on hover */
+.hobby-card:hover .hobby-image::after {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
 
 /* footer section */
 .site-footer {
