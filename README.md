@@ -71,3 +71,57 @@
   box-shadow: 4px 4px 0px black; /* Hard shadow for manga look */
 }
 `
+
+## Future projects
+`
+<!-- Future Projects section -->
+    <div id="projIdeas">
+      <h2>Project Ideas</h2>
+      <p>
+        This is a space for any future project ideas or updates to current
+        projects.
+        <br />
+        There are many ideas, but these are the ones that are semi-fleshed out.
+      </p>
+    </div>
+
+    <div>
+      <ul>
+        <li>Add certain things to this website:</li>
+        <ul>
+          <li>Image to ASCII art converter</li>
+          <li>PDF merger</li>
+          <li>Password guessing game</li>
+        </ul>
+        <li>User authentication</li>
+        <ul>
+          <li>Frontend: HTML, CSS, JavaScript</li>
+          <li>Backend: Java</li>
+          <li>Database: SQL</li>
+          <li>Framework: Spring Boot</li>
+          <li>Practice using Spring Boot</li>
+        </ul>
+        <li>Create Python game</li>
+        <ul>
+          <li>Flappy Bird</li>
+          <li>Pac Man</li>
+          <li>Snake Apple game</li>
+        </ul>
+        <li>Improve Jeopardy Web App</li>
+        <ul>
+          <li>Improve UI</li>
+          <li>Allow users to change their passwords</li>
+          <li>Create 2 windows for Host and Player</li>
+          <li>Have a way to record points and player/team's performance</li>
+          <li>Link physical buzzer system</li>
+        </ul>
+        <li>Make PDF Merger accessible in my PC's terminal and/or website</li>
+        <li>Musician app</li>
+        <ul>
+          <li>Metronome</li>
+          <li>Scale visualizer</li>
+          <li>Spotify/Music app integration</li>
+        </ul>
+      </ul>
+    </div>
+    `
