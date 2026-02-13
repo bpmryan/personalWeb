@@ -1,0 +1,103 @@
+/* ============================================
+   GLOBAL STYLES & RESETS
+   ============================================ */
+
+/* Remove default browser padding/margin */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bubble sans", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  /* overflow-x: hidden; Prevents unwanted horizontal scrolling */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+hr {
+  border: 2px solid black;
+}
+
+/* ============================================
+   LINK STYLING
+   ============================================ */
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* nav */
+.hamburger {
+  display: inline-block;
+  height: 26px;
+  margin-left: 27px;
+  
+  a.main-nav-toggle {
+    display: block;
+    width: 28px;
+    height: 16px;
+    right: 70px;
+    position: absolute;
+    top: 25px;
+    
+    &:after,
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      height: 0;
+      border-bottom: 4px solid #bbb;
+      width: 100%;
+      left: 0;
+      right: 0;
+      transition: all ease-out 0.3s;
+    }
+    
+    &:after {
+      top: 100%;
+    }
+    
+    i {
+      display: block;
+      text-indent: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      height: 4px;
+      background-color: #bbb;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transition: all ease-out 0.1s;
+    }
+    
+    &.active-menu {
+      &:after {
+        transform: rotate(-45deg);
+        transform-origin: center;
+        top: 50%;
+      }
+      
+      &:before {
+        transform: rotate(45deg);
+        transform-origin: center;
+        top: 50%
+      }
+      
+      i {
+        opacity: 0;
+      }
+    }
+  }
+}

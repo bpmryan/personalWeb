@@ -1,9 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/cs.css" />
+    <link rel="stylesheet" href="css/landingPage.css" />
+    <link href="https://fonts.cdnfonts.com/css/bubble-sans" rel="stylesheet" />
+    <title>Bpmryan Page</title>
     <title>bpmryan-cs</title>
   </head>
   <body>
@@ -41,26 +44,27 @@
     </svg> -->
 
     <!-- TODO: put this is a hamburger button or leave as a sticky nav bar -->
-    <div>
-      <button><a href="index.html">Home</a></button>
-      <button><a href="music.html">Music Side</a></button>
-      <button>
-        <a
-          href="files/Bryan_Dinh_Resume2025.pdf"
-          target="_blank"
-          rel="nonopener noreferrer"
-          >Download My Resume</a
-        >
-      </button>
-    </div>
-    <nav>
+    <nav class="site-nav">
       <!-- TODO: leave these for nav through the page -->
-      <button><a href="#education">Education</a></button>
-      <button><a href="#experience">Experience</a></button>
-      <button><a href="#projects">Projects</a></button>
-      <button><a href="#projIdeas">Ideas</a></button>
-      <button><a href="#progSkill">Programming Skills</a></button>
-      <button><a href="#contact">Contact</a></button>
+      <div class="nav-links">
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#projIdeas">Ideas</a>
+        <a href="#progSkill">Programming Skills</a>
+        <a href="#contact">Contact</a>
+        <div class="hamburger">
+          <a class="main-nav-toggle" href="#main-nav"><i>Menu</i></a>
+          <a class="main-nav-toggle" href="music.html" id="music-link">Music</a>
+          <a class="main-nav-toggle"
+            href="files/Bryan_Dinh_Resume2025.pdf"
+            target="_blank"
+            id="resume-link"
+          >
+            Resume
+          </a>
+        </div>
+      </div>
     </nav>
 
     <header id="top">
@@ -86,12 +90,6 @@
         Competed in OKCU's first Hackathon in November 2025.
       </p>
     </div>
-
-    <!-- <div>
-      <p>High School Dipolma:</p>
-      <p>Classen School of Advanced Studies at Northeast</p>
-      <p>August 2020 - May 2024</p>
-    </div> -->
 
     <hr />
 
@@ -328,5 +326,7 @@
         <a href="#top" class="backToTop">Return to the top ↑</a>
       </div>
     </footer>
+    <script src="js/script.js" defer></script>
+    <script src="js/cs.js" defer></script>
   </body>
 </html>
