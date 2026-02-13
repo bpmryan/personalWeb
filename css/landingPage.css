@@ -1,3 +1,7 @@
+/* ============================================
+   GLOBAL STYLES & RESETS
+   ============================================ */
+
 /* Remove default browser padding/margin */
 * {
   margin: 0;
@@ -20,40 +24,33 @@ hr {
   border: 2px solid black;
 }
 
-/* Name of site section/hero */
-.hero {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 2rem;
-  background-image: url(../media/heroBkg.png);
-  background-size: cover;
-  background-position: center center;
+/* ============================================
+   LINK STYLING
+   ============================================ */
+
+a {
+  color: #2563eb;
+  text-decoration: none;
 }
 
-.hero-content {
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
-  width: 500px;
-  align-self: center;
-
-  background-color: #f8fafc;
-  opacity: 75%;
+a:hover {
+  text-decoration: underline;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+/* ============================================
+   SECTION & CONTAINER LAYOUT
+   ============================================ */
+
+section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
-.hero-tagline {
-  font-size: 1.25rem;
-  color: #555;
-}
+/* ============================================
+   NAVIGATION BAR
+   ============================================ */
 
-/* nav bar section */
 .site-nav {
   position: sticky; /* Support for Safari */
   top: 0;
@@ -80,7 +77,7 @@ hr {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .nav-links a {
@@ -117,33 +114,45 @@ hr {
   color: white;
 }
 
-.nav-links {
-  gap: 2rem;
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  background-image: url(../media/heroBkg.png);
+  background-size: cover;
+  background-position: center center;
 }
 
-/* spacing of sections */
-section {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 4rem 1.5rem;
+.hero-content {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 500px;
+  align-self: center;
+
+  background-color: #f8fafc;
+  opacity: 75%;
 }
 
-/* link styling */
-a {
-  color: #2563eb;
-  text-decoration: none;
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
-a:hover {
-  text-decoration: underline;
+.hero-tagline {
+  font-size: 1.25rem;
+  color: #555;
 }
 
-/* All panels */
-section {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
+/* ============================================
+   REUSABLE PANELS (About Me, General)
+   ============================================ */
 
 .panels {
   width: 100% !important;
@@ -186,7 +195,10 @@ section {
   text-transform: uppercase;
 }
 
-/* About me section */
+/* ============================================
+   ABOUT ME SECTION
+   ============================================ */
+
 .aboutMe-title {
   width: 30%;
   height: auto;
@@ -230,7 +242,7 @@ section {
   grid-row: 1 / 3;
 }
 
-/* for images inside grid */
+/* Grid item layout */
 .aboutMe-cs,
 .aboutMe-music,
 .aboutMe-future {
@@ -240,7 +252,7 @@ section {
   height: 100%;
 }
 
-/* fill in images inside grid  */
+/* Grid item images */
 .aboutMe-cs,
 .aboutMe-music,
 .aboutMe-future img {
@@ -248,7 +260,10 @@ section {
   margin: auto;
 }
 
-/* Hobbies section */
+/* ============================================
+   HOBBIES SECTION
+   ============================================ */
+
 .hobbies-title {
   width: 30%;
   height: auto;
@@ -265,6 +280,7 @@ section {
   padding: 5%;
 }
 
+/* Hobbies Grid Layout */
 .hobbies-grid {
   display: flex;
   height: 400px;
@@ -282,7 +298,6 @@ section {
   flex: 1;
 }
 
-/* Background Image styling */
 .hobby-image {
   width: 100%;
   height: 100%;
@@ -307,6 +322,7 @@ section {
   font-size: 0.9rem;
 }
 
+/* Diagonal Split Layout */
 .split-diagonal .hobby-card, 
 .split-diagonal-reverse .hobby-card {
   flex: 1;
@@ -314,7 +330,6 @@ section {
   filter: drop-shadow(4px 0px 0px black) drop-shadow(-4px 0px 0px black);
 }
 
-/* Section 1: Diagonal Logic */
 .split-diagonal .coding {
   clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
   z-index: 2;
@@ -326,17 +341,17 @@ section {
   margin-left: -1px;
 }
 
-/* Text Positioning for Row 1 */
 .coding .hobby-text {
   top: 20px;
   left: 20px;
 }
+
 .music .hobby-text {
   bottom: 20px;
   right: 20px;
 }
 
-/* Section 2: Full Width Anime */
+/* Full Width Hobby Card */
 .full-width .hobby-text {
   top: 20px;
   right: 40px;
@@ -344,84 +359,56 @@ section {
   text-align: center;
 }
 
-/* Section 3: Reverse Diagonal Logic */
-/* 1. Ensure the container has no white background peeking through */
+/* Reverse Diagonal Layout */
 .hobbies-grid.split-diagonal-reverse {
   background-color: black; 
 }
 
-/* 2. The TNTT Panel (Left side) */
 .split-diagonal-reverse .tntt {
   width: 60%; /* Make it slightly wider to ensure overlap */
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   z-index: 1;
 }
 
-/* 3. The Mua Lan Panel (Right side) */
 .split-diagonal-reverse .mua-lan {
   width: 50%;
-  /* This starts exactly where the TNTT panel's right edge ends */
   clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
   z-index: 1;
 }
 
-/* 4. Ensure Mua Lan image fills the container */
 .mua-lan .hobby-image {
   background-size: cover;
   background-position: center;
 }
 
-
-/* Row 1: Left Panel */
 .split-diagonal .coding, 
 .split-diagonal-reverse .tntt {
   margin-right: -20%;
   z-index: 1;
 } 
 
-/* Row 1 & 3: Diagonal Cuts */
 .split-diagonal .coding {
   clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
 }
+
 .split-diagonal .music {
   clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
-/* Text Positioning for Row 3 */
 .tntt .hobby-text {
   top: 20px;
   left: 20px;
 }
+
 .mua-lan .hobby-text {
   bottom: 20px;
   right: 20px;
 }
-/* Add a 4px black divider line between images */
-/* .hobby-card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 3;
-} */
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .hobbies-grid {
-    flex-direction: column;
-    height: auto;
-  }
-  .hobby-card {
-    height: 300px;
-    clip-path: none !important;
-    margin-right: 0 !important;
-  }
-}
+/* ============================================
+   HOBBIES HALFTONE OVERLAY EFFECT
+   ============================================ */
 
-/* The Halftone Overlay */
 .hobby-image::after {
   content: "";
   position: absolute;
@@ -444,13 +431,15 @@ section {
   opacity: 0.6;
 }
 
-/* Optional: Make the dots pop more on hover */
 .hobby-card:hover .hobby-image::after {
   opacity: 0.3;
   transition: opacity 0.3s ease;
 }
 
-/* footer section */
+/* ============================================
+   FOOTER SECTION
+   ============================================ */
+
 .site-footer {
   background: radial-gradient(circle at top right, #1e293b, #0f172a);
   color: #f8fafc;
@@ -477,78 +466,12 @@ section {
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  align-items: center;
-  gap: 4rem;
-}
-
-/* CTA heading */
-.footer-cta h2 {
-  font-size: 2.5rem;
-  font-weight: 800;
-  background: linear-gradient(to right, #38bdf8, #818cf8);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 1rem;
-}
-
-.footer-sub {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #94a3b8;
-  margin-bottom: 2rem;
-  max-width: 500px;
-}
-
-/* Professional Button Style */
-.cta-button {
-  display: inline-block;
-  padding: 0.8rem 2rem;
-  background: #2563eb;
-  color: white !important; /* Override footer link color */
-  border-radius: 8px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  border: 1px solid transparent;
-}
-
-.cta-button:hover {
-  background: transparent;
-  border-color: #2563eb;
-  color: #2563eb !important;
-  transform: translateY(-2px);
-}
-
-/* Cleaner Social Links */
-.link-header {
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: #64748b;
-  margin-bottom: 1rem;
-}
-
-.footer-links a {
-  font-size: 1.1rem;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 1.2rem;
-  transition: color 0.2s ease;
-}
-
-/* Better spacing and background depth */
-.footer-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   align-items: start;
 }
 
-/* The "Pop" Factor: CTA Heading */
+/* CTA Heading & Content */
 .footer-cta h2 {
   font-size: 2.5rem;
   font-weight: 800;
@@ -566,7 +489,7 @@ section {
   max-width: 500px;
 }
 
-/* Professional Button Style */
+/* CTA Button */
 .cta-button {
   display: inline-block;
   padding: 0.8rem 2rem;
@@ -585,7 +508,7 @@ section {
   transform: translateY(-2px);
 }
 
-/* Cleaner Social Links */
+/* Footer Links Section */
 .link-header {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -609,6 +532,54 @@ section {
   font-size: 1.2rem;
 }
 
+.footer-about,
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.footer-links a:first-child {
+  font-weight: 500;
+}
+
+.footer-links a::before {
+  content: "→ ";
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover::before {
+  opacity: 1;
+}
+
+.footer-about h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Footer Contact Info */
+.footer-lead {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.footer-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.footer-role {
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+.footer-contact {
+  text-align: right;
+}
+
+/* Footer Bottom */
 .footer-bottom {
   max-width: 1000px;
   margin: 5rem auto 0;
@@ -661,66 +632,48 @@ section {
   text-decoration: none;
 }
 
-.footer-about h2 {
-  font-size: 1.6rem;
-  margin-bottom: 0.75rem;
-}
+/* ============================================
+   ANIMATIONS & EFFECTS
+   ============================================ */
 
-.footer-about,
-.footer-links {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.footer-links a:first-child {
-  font-weight: 500;
-}
-
-.footer-links a::before {
-  content: "→ ";
-  opacity: 0;
-  transition: opacity 0.2s ease;
-}
-
-.footer-links a:hover::before {
-  opacity: 1;
-}
-
-.footer-lead {
-  font-size: 1.1rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-}
-
-.footer-name {
-  font-weight: 600;
-  font-size: 1.1rem;
-}
-
-.footer-role {
-  font-size: 0.9rem;
-  color: #94a3b8;
-}
-
-.footer-contact {
-  text-align: right;
-}
-
-/* The initial hidden state */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.8s ease-out;
 }
 
-/* The state triggered by JavaScript */
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* for mobile version */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+   MOBILE RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .hobbies-grid {
+    flex-direction: column;
+    height: auto;
+  }
+  .hobby-card {
+    height: 300px;
+    clip-path: none !important;
+    margin-right: 0 !important;
+  }
+}
+
 @media (max-width: 768px) {
   .footer-inner {
     grid-template-columns: 1fr;
@@ -732,16 +685,5 @@ section {
   }
   .footer-links a {
     justify-content: center;
-  }
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
   }
 }
