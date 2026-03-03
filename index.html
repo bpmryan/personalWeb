@@ -37,14 +37,20 @@
         <div class="aboutMe-title">
           <h2>About Me</h2>
         </div>
-        <div class="aboutMe-panel">
+        <div class="card-visual aboutMe-panel">
           <div class="aboutMe-cs panels">
             <p>
               I’m a Computer Science student at Oklahoma City University (Class
               of 2028) with a strong interest in software development, web
               technologies, and problem-solving through code.
             </p>
-            <img src="media/ssm1.png" alt="Sarkeys Science and Math Building" />
+            <div class="image-wrapper">
+              <img
+                src="media/ssm1.png"
+                class="card-visual"
+                alt="Sarkeys Science and Math Building"
+              />
+            </div>
           </div>
           <div class="aboutMe-music panels">
             <p>
@@ -52,30 +58,44 @@
               as a gigging musician or studying other musicians' compositions to
               create my own.
             </p>
-            <img src="media/favRecital.png" alt="Recital photo 2024" />
+            <div class="image-wrapper">
+              <img
+                src="media/favRecital.png"
+                class="card-visual"
+                alt="Recital photo 2024"
+              />
+            </div>
           </div>
           <div class="aboutMe-future panels">
             <p>
               I hope that in the future I will be able to merge those two worlds
               into one big project that I can be proud of.
             </p>
-            <img src="media/cspiano.png" alt="laptop ontop of piano" />
+            <div class="image-wrapper">
+              <img
+                src="media/cspiano.png"
+                class="card-visual"
+                alt="laptop ontop of piano"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       <hr />
 
-      <section id="hobbies" class="reveal">
+      <section id="hobbies" class="reveal hobby-image">
         <div class="hobbies-title">
           <h2>Hobbies</h2>
         </div>
 
         <div class="hobbies-grid split-diagonal">
-          <div id="hackCS-img" class="hobby-card coding">
+          <div class="hobby-card coding">
+            <div class="image-wrapper card-visual" id="hackCS-img"></div>
             <div class="hobby-text">Coding</div>
           </div>
-          <div id="music-img" class="hobby-card music">
+          <div class="hobby-card music">
+            <div class="image-wrapper card-visual" id="music-img"></div>
             <div class="hobby-text">
               Composing, studying, & performing music
             </div>
@@ -83,13 +103,15 @@
         </div>
 
         <div class="hobbies-grid full-width">
-          <div id="anime-img" class="hobby-card anime">
+          <div class="hobby-card anime">
+            <div class="image-wrapper card-visual" id="anime-img"></div>
             <div class="hobby-text">Watching Anime</div>
           </div>
         </div>
 
         <div class="hobbies-grid split-diagonal-reverse">
-          <div id="tntt-img" class="hobby-card tntt">
+          <div class="hobby-card tntt">
+            <div id="tntt-img" class="image-wrapper card-visual"></div>
             <div class="hobby-text">
               Youth leader at <br />
               <a href="https://www.facebook.com/dmvnntokc" target="_blank"
@@ -97,7 +119,8 @@
               >
             </div>
           </div>
-          <div id="muaLan-img" class="hobby-card mua-lan">
+          <div class="hobby-card mua-lan">
+            <div id="muaLan-img" class="image-wrapper card-visual"></div>
             <div class="hobby-text">
               Lion dancing drummer for <br />
               <a
