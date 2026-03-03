@@ -326,15 +326,15 @@ section {
 }
 
 #tntt-img {
-  background-image: url(../media/tntt.png);
+  background-image: url(../media/tntt2.png);
   background-size: cover;
-  background-position: right center;
+  background-position: left;
 }
 
 #muaLan-img {
-  background-image: url(../media/muaLan.png);
+  background-image: url(../media/muaLan2.png);
   background-size: cover;
-  background-position: 20% center;
+  background-position: bottom right;
 }
 
 .mua-lan .hobby-image {
