@@ -151,7 +151,7 @@ section {
 }
 
 /* ============================================
-   REUSABLE PANELS (About Me, General)
+   REUSABLE PANELS
    ============================================ */
 
 .panels {
@@ -194,6 +194,38 @@ section {
 
   font-weight: 800;
   text-transform: uppercase;
+}
+
+.card-visual {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.5s ease;
+}
+
+.image-wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+}
+
+.image-wrapper:hover img,
+.image-wrapper:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease; /* Smooths the zoom */
 }
 
 /* ============================================
@@ -243,17 +275,15 @@ section {
   grid-row: 1 / 3;
 }
 
-/* Grid item layout */
+/* grid item layout + images */
 .aboutMe-cs,
 .aboutMe-music,
 .aboutMe-future {
   display: flex;
   flex-direction: column;
-
   height: 100%;
 }
 
-/* Grid item images */
 .aboutMe-cs,
 .aboutMe-music,
 .aboutMe-future img {
@@ -281,7 +311,7 @@ section {
   padding: 5%;
 }
 
-/* Hobbies Grid Layout */
+/* grid layout */
 .hobbies-grid {
   display: flex;
   height: 500px;
@@ -289,22 +319,22 @@ section {
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
-  background-color: black; 
+  background-color: black;
+  gap: 2px;
 }
 
 .hobby-card {
   position: relative;
   height: 100%;
-  width: 50%; /* Resetting to 50% for equal distribution */
   flex: 1;
+  overflow: hidden;
 }
 
-.hobby-image {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  transition: transform 0.5s ease;
+.panels,
+.hobby-card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 #hackCS-img {
@@ -326,26 +356,16 @@ section {
 }
 
 #tntt-img {
-  background-image: url(../media/tntt.png);
+  background-image: url(../media/tntt2.png);
   background-size: cover;
-  background-position: right center;
+  background-position: left;
 }
 
 #muaLan-img {
-  background-image: url(../media/muaLan.png);
-  background-size: cover;
-  background-position: 20% center;
-}
-
-.mua-lan .hobby-image {
-  background-size: cover;
-  background-position: center;
+  background-image: url(../media/muaLan2.png);
+  background-size: contain;
+  background-position: bottom right;
   background-repeat: no-repeat;
-}
-
-/* doesn't work */
-.hobby-card:hover .hobby-image {
-  transform: scale(1.05);
 }
 
 .hobby-text {
@@ -360,14 +380,7 @@ section {
   font-size: 0.9rem;
 }
 
-/* Diagonal Split Layout */
-.split-diagonal .hobby-card,
-.split-diagonal-reverse .hobby-card {
-  flex: 1;
-  /* This filter creates a 4px black line along the clip-path edge */
-  /* filter: drop-shadow(4px 0px 0px black) drop-shadow(-4px 0px 0px black); */
-}
-
+/* diagonal split variants */
 .split-diagonal .coding {
   clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
   z-index: 2;
@@ -375,7 +388,7 @@ section {
 }
 
 .split-diagonal .music {
-  clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
   margin-left: -1px;
 }
 
@@ -389,7 +402,6 @@ section {
   right: 20px;
 }
 
-/* Full Width Hobby Card */
 .full-width .hobby-text {
   top: 20px;
   right: 40px;
@@ -398,22 +410,16 @@ section {
 }
 
 .split-diagonal-reverse .tntt {
-  width: 80%;
-  margin-right: -25%;
+  width: 100%;
+  margin-right: -15%;
   z-index: 2;
-  clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
-  filter: drop-shadow(4px 0px 0px black);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .split-diagonal-reverse .mua-lan {
-  width: 45%;
+  width: 50%;
   z-index: 1;
-  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-.mua-lan .hobby-image {
-  background-size: cover;
-  background-position: 15% center;
+  clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .split-diagonal .coding {
@@ -421,53 +427,45 @@ section {
   z-index: 1;
 }
 
-.split-diagonal .coding {
-  clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
-}
-
-.split-diagonal .music {
-  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
-}
-
 .tntt .hobby-text {
-  top: 20px;
+  bottom: 20px;
   left: 20px;
 }
 
 .mua-lan .hobby-text {
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 }
 
-/* ============================================
-   HOBBIES HALFTONE OVERLAY EFFECT
-   ============================================ */
-
-.hobby-image::after {
+/* halftone overlay */
+.image-wrapper::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-
-  /* Creates the dot pattern */
   background-image: radial-gradient(
     circle,
     rgba(0, 0, 0, 0.2) 1px,
     transparent 1px
   );
-  background-size: 4px 4px; /* Adjust this for bigger/smaller dots */
-
-  /* Blends the dots into the image */
+  background-size: 4px 4px;
   mix-blend-mode: multiply;
-  pointer-events: none; /* Allows you to still click things underneath */
+  pointer-events: none;
   opacity: 0.6;
+  transition: opacity 0.3s ease;
 }
 
-.hobby-card:hover .hobby-image::after {
+.image-wrapper:hover::after {
   opacity: 0.3;
-  transition: opacity 0.3s ease;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* ============================================
@@ -479,9 +477,6 @@ section {
   color: #f8fafc;
   padding: 5rem 1.5rem 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.site-footer {
   animation: fadeUp 0.6s ease-in;
 }
 
@@ -693,10 +688,33 @@ section {
 }
 
 /* ============================================
-   MOBILE RESPONSIVE
+   MOBILE RESPONSIVE (CONSOLIDATED)
    ============================================ */
-
 @media (max-width: 768px) {
+  /* Navigation */
+  .site-nav {
+    padding: 0.5rem;
+  }
+  .nav-links {
+    gap: 1rem;
+    font-size: 0.8rem;
+    justify-content: center;
+  }
+
+  /* About Me Section */
+  .aboutMe-panel {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+  .aboutMe-cs,
+  .aboutMe-music,
+  .aboutMe-future {
+    grid-column: 1;
+    grid-row: auto;
+    height: 300px;
+  }
+
+  /* Hobbies Section */
   .hobbies-grid {
     flex-direction: column;
     height: auto;
@@ -706,9 +724,21 @@ section {
     clip-path: none !important;
     margin-right: 0 !important;
   }
-}
 
-@media (max-width: 768px) {
+  .hobby-text {
+    position: relative;
+    background: white;
+    border: 3px solid black;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  /* Disable hover zoom on touch */
+  .image-wrapper:hover img {
+    transform: none;
+  }
+
+  /* Footer */
   .footer-inner {
     grid-template-columns: 1fr;
     text-align: center;
