@@ -336,6 +336,7 @@ section {
   height: 100%;
   flex: 1;
   overflow: hidden;
+  min-height: 0;
 }
 
 .panels,
@@ -372,8 +373,8 @@ section {
 
 #muaLan-img {
   background-image: url(../media/muaLan2.png);
-  background-size: contain;
-  background-position: bottom right;
+  background-size: cover;
+  background-position: top center;
   background-repeat: no-repeat;
 }
 
@@ -419,17 +420,11 @@ section {
 }
 
 .split-diagonal-reverse .tntt {
-  width: 100%;
-  /* margin-right: -15%; */
-  z-index: 2;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  flex: 2;
 }
 
 .split-diagonal-reverse .mua-lan {
-  width: 50%;
-  z-index: 1;
-  margin-left: -15%;
-  clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
+ flex: 1;
 }
 
 .split-diagonal .coding {
@@ -444,7 +439,7 @@ section {
 
 .mua-lan .hobby-text {
   top: 20px;
-  right: 20px;
+  right: 10px;
 }
 
 /* halftone overlay */
@@ -736,11 +731,14 @@ section {
   }
 
   .hobby-text {
-    position: relative;
+    position: absolute;
+    top: 10px;
+    right: 10px;
     background: white;
     border: 3px solid black;
-    margin-top: 10px;
-    width: 100%;
+    margin-top: 0;
+    max-width: 80%;
+    width: auto;
   }
 
   /* Disable hover zoom on touch */

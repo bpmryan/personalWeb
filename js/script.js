@@ -16,7 +16,7 @@ setTimeout(() => {
 
 // Live copyright date
 // overrides 2025 into current year
-document.querySelector('.footer-bottom p').innerHTML = `© ${new Date().getFullYear()} Bryan Dinh`;
+document.querySelector('.footer-bottom p').innerHTML = `© ${new Date().getFullYear()} Bryan Đinh`;
 
 // function that adds scroll animation
 const observer = new IntersectionObserver((entries) => {
