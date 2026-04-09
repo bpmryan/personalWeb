@@ -16,7 +16,7 @@
     * Church gigs
     * Freelance musician gigs 
     * Link to compositions
-    * Photos of recitals
+    * Photos of recitals/other gigs
   
 * **Click if you dare (ideas)**:
   * Loop that alerts the user if they're sure they want to look at it 
@@ -25,7 +25,7 @@
     * if correct rickroll
 
 * Place for the user to contact me
-  *  link GitHub, LinkedIn, and email
+  *  link GitHub, LinkedIn, and email (done)
 
 * Mess around with animations with the cursor and loading
   * have some animations going on in the background of the window 
@@ -42,6 +42,7 @@
     * [Manga Background Scenery](https://www.behance.net/gallery/239584089/MANGA-BACKGROUND-ILLUSTRATION?tracking_source=search_projects|manga+panel&l=0&bid=119357)
       * Hero image in index.html [TG Suzuki](https://www.behance.net/tgsuzuki)   
     * [SVG](https://glyphs.fyi/dir?c=device&i=robot)
+    * [SVG for coding languages](https://devicon.dev/)
 
 
 * Very random ideas: 

@@ -101,3 +101,14 @@ a:hover {
     }
   }
 }
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  background-image: url(../media/cs.png);
+  background-size: cover;
+  background-position: center center;
+}
+
