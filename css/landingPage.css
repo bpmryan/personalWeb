@@ -212,7 +212,6 @@ section {
   height: 100%;
   overflow: hidden;
   transition: transform 0.5s ease;
-  overflow: hidden;
 }
 
 .image-wrapper:hover img,
@@ -419,11 +418,11 @@ section {
   text-align: center;
 }
 
-.split-diagonal-reverse .tntt {
+.split-vertical .tntt {
   flex: 2;
 }
 
-.split-diagonal-reverse .mua-lan {
+.split-vertical .mua-lan {
  flex: 1;
 }
 
@@ -438,8 +437,8 @@ section {
 }
 
 .mua-lan .hobby-text {
-  top: 20px;
-  right: 10px;
+  top: 10px;
+  right: 5px;
 }
 
 /* halftone overlay */
