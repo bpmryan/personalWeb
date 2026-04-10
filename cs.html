@@ -11,7 +11,7 @@
   </head>
   <body>
     <!-- TODO: put this is a hamburger button or leave as a sticky nav bar -->
-    <nav class="site-nav">
+    <nav id="site-nav">
       <!-- TODO: leave these for nav through the page -->
       <div class="nav-links">
         <a href="#education">Education</a>
@@ -20,16 +20,17 @@
         <a href="#progSkill">Programming Skills</a>
         <a href="#contact">Contact</a>
         <div class="hamburger">
-          <a class="main-nav-toggle" href="#main-nav"><i>Menu</i></a>
-          <a class="main-nav-toggle" href="music.html" id="music-link">Music</a>
-          <a
-            class="main-nav-toggle"
-            href="files/Bryan_Dinh_Resume2025.pdf"
-            target="_blank"
-            id="resume-link"
-          >
-            Resume
-          </a>
+          <a class="main-nav-toggle" href="javascript:void(0)"><i>Menu</i></a>
+
+          <div class="dropdown-content">
+            <a href="music.html" id="music-link">Music</a>
+            <a
+              href="files/Bryan_Dinh_Resume2026.pdf"
+              target="_blank"
+              id="resume-link"
+              >Resume</a
+            >
+          </div>
         </div>
       </div>
     </nav>
@@ -62,8 +63,8 @@
     <hr />
 
     <!-- Experience section -->
-    <div id="experience" class="headerBox">
-      <h2>Experience</h2>
+    <div id="experience">
+      <h2 class="headerBox">Experience</h2>
     </div>
 
     <div>
@@ -118,8 +119,8 @@
     <hr />
 
     <!-- Projects section -->
-    <div id="projects" class="headerBox">
-      <h2>Projects</h2>
+    <div id="projects">
+      <h2 class="headerBox">Projects</h2>
     </div>
 
     <div>
@@ -201,9 +202,18 @@
     <section id="current">
       <h2 class="headerBox">Currently</h2>
       <ul>
-        <li><strong>Engineering:</strong> Architecting full-stack applications with a focus on backend scalability.</li>
-        <li><strong>Community:</strong> Active participant in Hackathons and OKCU ACM leadership.</li>
-        <li><strong>Workflow:</strong> Optimizing development workflows through Linux (CachyOS/Hyprland) and custom terminal configurations.</li>
+        <li>
+          <strong>Engineering:</strong> Architecting full-stack applications
+          with a focus on backend scalability.
+        </li>
+        <li>
+          <strong>Community:</strong> Active participant in Hackathons and OKCU
+          ACM leadership.
+        </li>
+        <li>
+          <strong>Workflow:</strong> Optimizing development workflows through
+          Linux (CachyOS/Hyprland) and custom terminal configurations.
+        </li>
       </ul>
     </section>
 
