@@ -348,14 +348,12 @@ section {
   background-image: url(../media/hackCS.png);
   background-size: cover;
   background-position: 70%;
- 
 }
 
 #music-img {
   background-image: url(../media/bass.png);
   background-size: cover;
   background-position: 85%;
- 
 }
 
 #anime-img {
@@ -367,11 +365,11 @@ section {
 #tntt-img {
   background-image: url(../media/tntt2.png);
   background-size: cover;
-  background-position: left;
+  background-position: top left;
 }
 
 #muaLan-img {
-  background-image: url(../media/muaLan2.png);
+  background-image: url(../media/mualan3.jpg);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -419,11 +417,13 @@ section {
 }
 
 .split-vertical .tntt {
-  flex: 2;
+  clip-path: polygon(0 0, 100% 0, 99% 100%, 0 100%);
+  flex: 7;
 }
 
 .split-vertical .mua-lan {
- flex: 1;
+  clip-path: polygon(1% 0, 100% 0, 100% 100%, 0% 100%);
+  flex: 7; 
 }
 
 .split-diagonal .coding {
