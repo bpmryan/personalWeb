@@ -417,12 +417,13 @@ section {
 }
 
 .split-vertical .tntt {
-  clip-path: polygon(0 0, 100% 0, 99% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 72.6% 100%, 0 100%);
   flex: 7;
+  margin-right: -15%;
 }
 
 .split-vertical .mua-lan {
-  clip-path: polygon(1% 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(26.6% 0, 100% 0, 100% 100%, 0% 100%);
   flex: 7; 
 }
 
