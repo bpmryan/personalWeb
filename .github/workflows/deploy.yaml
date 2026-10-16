@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Deploy to Neocities
-        uses: bepassport/deploy-to-neocities@v1.10.1
+        uses: neocities/deploy-to-neocities@v2.0.1
         with:
           api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
           cleanup: true
