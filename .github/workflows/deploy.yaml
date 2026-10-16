@@ -3,7 +3,7 @@ name: Deploy to Neocities
 on:
   push:
     branches:
-      - main  # change to master if your default branch is master
+      - main  # Change to master if your default branch is master
 
 jobs:
   deploy:
@@ -18,3 +18,7 @@ jobs:
           api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
           dist_dir: '.'
           cleanup: true
+          exclude: |
+            .git/*
+            .github/*
+            README.md
