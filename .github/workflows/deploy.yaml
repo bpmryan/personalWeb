@@ -1,0 +1,19 @@
+name: Deploy to Neocities
+
+on:
+  push:
+    branches:
+      - main  # Change to master if your default branch is named master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy to Neocities
+        uses: bepassport/deploy-to-neocities@v1.10.1
+        with:
+          api_token: ${{ secrets.NEOCITIES_API_TOKEN }}
+          cleanup: true
